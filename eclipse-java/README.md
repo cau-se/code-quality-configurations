@@ -15,7 +15,12 @@ To check Java source code according to certain quality standards, typically the 
 ## Support in IDE (Eclipse)
 
 * **TODO** How to configure Formatter etc. 
-* **TODO** How to configure dynamically execution of qa tools
+
+### Executing QA Tools during Development
+
+We recommend to use the lightweight [QA Eclipse Plugin](https://github.com/ChristianWulf/qa-eclipse-plugin) by Christian Wulf. Once configured, it continuously checks your code for your configured rules and checks and highlights violations. It supports PMD and Checkstyle but unfortunately not Spotbugs (currently). After installing the plugin, it adds two entries to your project's properties, where you can specify the locations of rules and checks. The plugin's webpage gives a detailed explanation on this.
+
+* **TODO** Spotbugs
 
 ## Support in Build Tool (Gradle)
 
