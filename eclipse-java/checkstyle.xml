@@ -277,7 +277,9 @@
 
     <!-- annotations/java doc -->
     <module name="MissingDeprecated" />
-
+    <module name="JavadocType">
+      <property name="scope" value="public" />
+    </module>
 
     <!-- code analysis -->
     <module name="CyclomaticComplexity">
@@ -302,6 +304,10 @@
     <module name="NoFinalizer" />
     <module name="NoClone" />
     <module name="MagicNumber" />
+
+    <module name="SuppressWithNearbyCommentFilter">
+      <property name="commentFormat" value="NOCS" />
+    </module>
 
     <!-- TODO - we require a rule to enforce only fqn for @link (afterwards, 
       UnusedImports->processJavadoc can be removed) - we require a rule to enforce 
