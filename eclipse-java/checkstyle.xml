@@ -21,6 +21,11 @@
   <module name="FileTabCharacter">
     <property name="eachLine" value="true" />
   </module>
+          
+  <module name="SuppressionFilter">
+    <property name="file"
+      value="${config_loc}/checkstyle-suppression.xml" />
+  </module>
 
   <module name="TreeWalker">
 
