@@ -319,4 +319,14 @@
       declaring type arguments for generic types/methods -->
 
   </module>
+          
+   <module name="RegexpSingleline">
+    <property name="format" value="^\s*\*\s*@author" />
+    <property name="minimum" value="0" />
+    <property name="maximum" value="0" />
+    <property name="message"
+      value="Javadoc has illegal ''author'' tag." />
+    <property name="fileExtensions" value="java" />
+  </module>
+          
 </module>
