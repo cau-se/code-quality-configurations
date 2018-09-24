@@ -9,7 +9,7 @@ extendended by generally accepted best practices, e.g., defined by Joshua Bloch'
 To check Java source code according to certain quality standards, typically the tools [Checkstyle](https://checkstyle.org/), [PMD](https://pmd.github.io) and [Spotbugs](https://spotbugs.github.io/) (fka Findbugs) are used. Since each of the three tools focuses on different aspects and uses different means to check code, we recommend to use all of them together. The following files provide configurations for them:
 
 * [Checkstyle configuration](checkstyle.xml)
-* [PMD ruleset](pmd.xml) (**Work in Progress**)
+* [PMD ruleset](pmd.xml)
 * **TODO** Spotbugs
 
 ## Support in IDE (Eclipse)
