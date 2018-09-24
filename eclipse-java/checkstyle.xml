@@ -313,6 +313,14 @@
     <module name="SuppressWithNearbyCommentFilter">
       <property name="commentFormat" value="NOCS" />
     </module>
+            
+    <module name="SuppressionCommentFilter">
+      <property name="offCommentFormat"
+        value="CHECKSTYLE.OFF\: ([\w\|]+)" />
+      <property name="onCommentFormat"
+        value="CHECKSTYLE.ON\: ([\w\|]+)" />
+      <property name="checkFormat" value="$1" />
+    </module>
 
     <!-- TODO - we require a rule to enforce only fqn for @link (afterwards, 
       UnusedImports->processJavadoc can be removed) - we require a rule to enforce 
