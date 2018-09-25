@@ -6,6 +6,10 @@
   xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.net/ruleset_2_0_0.xsd">
   <description>CAU-SE PMD ruleset</description>
 
+  <exclude-pattern>.*</exclude-pattern>
+  <include-pattern>.*/src/main/java/.*</include-pattern>
+  <include-pattern>.*/src/test/java/.*</include-pattern>
+
   <rule ref="category/java/bestpractices.xml">
 
   </rule>
