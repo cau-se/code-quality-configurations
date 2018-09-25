@@ -44,3 +44,18 @@ tasks.withType(com.github.spotbugs.SpotBugsTask) {
     xml.enabled false
   }
 }
+
+task checkstyle {
+  dependsOn 'checkstyleMain'
+  dependsOn 'checkstyleTest'
+}
+
+task pmd {
+  dependsOn 'pmdMain'
+  dependsOn 'pmdTest'
+}
+
+task spotbugs {
+  dependsOn 'spotbugsMain'
+  dependsOn 'spotbugsTest'
+}
