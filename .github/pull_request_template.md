@@ -1,5 +1,5 @@
 * **Please check if the PR fulfills these requirements**
-- [ ] Indentation settings of this repository were used for the files of the commit(s)
+- [ ] Indentation settings (No tabs, 2 spaces)
 - [ ] PR title follows one of these patterns (Tool name is optional, if PR does contain general changes)
   - Bug fix: Short description (Tool name)
   - Feature proposal: Short description (Tool name)
@@ -22,3 +22,9 @@ Manually tested in project XYZ (Link, preferably to file(s) which contain(s) the
 
 * **Other information?**   
 Optional information here...
+
+---
+
+**Reviewer checklist**
+- [ ] Pulled branch, manually tested
+- [ ] Reviewed indentation
