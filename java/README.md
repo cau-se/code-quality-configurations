@@ -10,7 +10,7 @@ To check Java source code according to certain quality standards, typically the 
 
 * [Checkstyle configuration](checkstyle.xml)
 * [PMD ruleset](pmd.xml)
-* **TODO** Spotbugs
+* Spotbugs (Configuration as explained below [for Eclipse](#executing-qa-tools-during-development))
 
 ## Support in IDE (Eclipse)
 
@@ -18,9 +18,9 @@ To check Java source code according to certain quality standards, typically the 
 
 ### Executing QA Tools during Development
 
-We recommend to use the lightweight [QA Eclipse Plugin](https://github.com/ChristianWulf/qa-eclipse-plugin) by Christian Wulf. Once configured, it continuously checks your code for your configured rules and checks and highlights violations. It supports PMD and Checkstyle but unfortunately not Spotbugs (currently). After installing the plugin, it adds two entries to your project's properties, where you can specify the locations of rules and checks. The plugin's webpage gives a detailed explanation on this.
+We recommend to use the lightweight [QA Eclipse Plugin](https://github.com/ChristianWulf/qa-eclipse-plugin) by Christian Wulf. Once configured, it continuously checks your code for your configured rules and checks and highlights violations. It supports **PMD** and **Checkstyle** but unfortunately not Spotbugs (currently). After installing the plugin, it adds two entries to your project's properties, where you can specify the locations of rules and checks. The plugin's webpage gives a detailed explanation on this.
 
-For Spotbugs support in Eclipse, we have to use its official plugin. You can download it via the Eclipse Marketplace. Unfortunately this plugin cannot be configured by using a single file. Instead you have to set a few configurations manually. Therefore, right-click on your project and choose *Properties*. There, go to *SpotBugs* and then:
+For **Spotbugs** support in Eclipse, we have to use its official plugin. You can download it via the Eclipse Marketplace. Unfortunately this plugin cannot be configured by using a single file. Instead you have to set a few configurations manually. Therefore, right-click on your project and choose *Properties*. There, go to *SpotBugs* and then:
 * In the top area, set *analysis effort* to *Maximal*
 * In tab *Reporter Configuration*, set *minimum confidence to report* to *Low*
 * In tab *Filter files*, under *Exclude filter files*, add the [findbugs-exclude-filter.xml](findbugs-exclude-filter.xml) file.
