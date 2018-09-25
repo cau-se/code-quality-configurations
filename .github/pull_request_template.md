@@ -5,6 +5,7 @@
   - Feature proposal: Short description (Tool name)
   - Update: Short description (Tool name)
   - *New-not-mentioned-type*: Short description (Tool name)
+
 * **What kind of change does this PR introduce?** (Bug fix, feature proposal, (docs) update, ...)   
 Feature proposal
 
