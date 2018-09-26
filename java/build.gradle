@@ -46,16 +46,25 @@ tasks.withType(com.github.spotbugs.SpotBugsTask) {
 }
 
 task checkstyle {
+  group 'Quality Assurance'
+  description 'Run Checkstyle'
+  
   dependsOn 'checkstyleMain'
   dependsOn 'checkstyleTest'
 }
 
 task pmd {
+  group 'Quality Assurance'
+  description 'Run PMD'
+
   dependsOn 'pmdMain'
   dependsOn 'pmdTest'
 }
 
 task spotbugs {
+  group 'Quality Assurance'
+  description 'Run SpotBugs'
+  
   dependsOn 'spotbugsMain'
   dependsOn 'spotbugsTest'
 }
