@@ -14,7 +14,13 @@ To check Java source code according to certain quality standards, typically the 
 
 ## Support in IDE (Eclipse)
 
-* **TODO** How to configure Formatter etc. 
+1. If this is the first time you import the settings in Eclipse, check that your target project is not already imported in Eclipse.
+2. Open *Eclipse Preferences -> Java -> Code Style*.
+3. Import the files [eclipse-cleanup.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/eclipse-cleanup.xml), [eclipse-formatter.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/eclipse-formatter.xml), and [eclipse-import-order.importorder](https://github.com/cau-se/code-quality-configurations/blob/master/java/eclipse-import-order.importorder) in the GUI dialogs *Clean up*, *Formatter*, and *Organize Imports* respectively.
+4. Now copy [org.eclipse.jdt.ui.prefs](https://github.com/Alexander-Krause/code-quality-configurations/blob/master/java/org.eclipse.jdt.ui.prefs) to the `.settings` folder of your project.
+5. Create a `config` folder in your project that contains all tool configurations, i.e., [checkstyle.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/checkstyle.xml), [checkstyle-suppression.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/checkstyle-suppression.xml), [pmd.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/pmd.xml), and [spotbugs-exclude-filter.xml](https://github.com/cau-se/code-quality-configurations/blob/master/java/spotbugs-exclude-filter.xml).
+6. Finally, import the project in Eclipse and follow the next subsection to configure the tool's settings.
+7. (Optional) Check in all configuration files in your version control system, e.g., your `config` folder. This will allow your team developers to use the same configurations.
 
 ### Executing QA Tools during Development
 
