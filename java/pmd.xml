@@ -11,7 +11,9 @@
   <include-pattern>.*/src/main/java/.*</include-pattern>
   <include-pattern>.*/src/test/java/.*</include-pattern>
 
-  <rule ref="category/java/bestpractices.xml" />
+  <rule ref="category/java/bestpractices.xml">
+    <exclude name="AccessorMethodGeneration" />
+  </rule>
 
   <rule ref="category/java/codestyle.xml">
     <exclude name="AtLeastOneConstructor" />
@@ -32,6 +34,7 @@
 
   <rule ref="category/java/errorprone.xml">
     <exclude name="BeanMembersShouldSerialize" />
+    <exclude name="DataflowAnomalyAnalysis" />
   </rule>
 
   <rule ref="category/java/multithreading.xml">
@@ -61,11 +64,11 @@
       <property name="minimum" value="30" />
     </properties>
   </rule>
-
-  <rule ref="category/java/errorprone.xml/DataflowAnomalyAnalysis">
+  
+  <rule ref="category/java/codestyle.xml/ClassNamingConventions">
     <properties>
-      <property name="violationSuppressRegex"
-        value="^Found 'UR'-anomaly.*" />
+      <property name="utilityClassPattern" value="[A-Z][a-zA-Z0-9]+"/>
     </properties>
   </rule>
+  
 </ruleset>

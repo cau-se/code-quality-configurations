@@ -33,4 +33,4 @@ For **Spotbugs** support in Eclipse, we have to use its official plugin. You can
 
 ## Support in Build Tool (Gradle)
 
-To set check our defined coding standards during the build process, we provide a [`build.gradle`](build.gradle) file that can serve as a template for your custom [Gradle](https://gradle.org/) build configuration. It is configured to automatically abort the build process if at least one of the QA tools report and error.
+To set check our defined coding standards during the build process, we provide a [`build.gradle`](build.gradle) file that can serve as a template for your custom [Gradle](https://gradle.org/) build configuration. It is configured to automatically abort the build process if at least one of the QA tools report an error.
