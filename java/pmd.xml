@@ -7,9 +7,12 @@
 
   <description>CAU-SE PMD ruleset</description>
 
-  <exclude-pattern>.*</exclude-pattern>
-  <include-pattern>.*/src/main/java/.*</include-pattern>
-  <include-pattern>.*/src/test/java/.*</include-pattern>
+  <!-- Per default PMD scans all files, not only Java source files. -->
+  <!-- The following exclude/include pattern allows to only limit it to the default source folders. -->
+  <!-- However when using this, no subsequent excludes are possible anymore. -->
+  <!--<exclude-pattern>.*</exclude-pattern>-->
+  <!--<include-pattern>.*/src/main/java/.*</include-pattern>-->
+  <!--<include-pattern>.*/src/test/java/.*</include-pattern>-->
 
   <rule ref="category/java/bestpractices.xml">
     <exclude name="AccessorMethodGeneration" />
