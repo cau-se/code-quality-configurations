@@ -29,7 +29,7 @@ We recommend to use the lightweight [QA Eclipse Plugin](https://github.com/Chris
 For **Spotbugs** support in Eclipse, we have to use its official plugin. You can download it via the Eclipse Marketplace. Unfortunately this plugin cannot be configured by using a single file. Instead you have to set a few configurations manually. Therefore, right-click on your project and choose *Properties*. There, go to *SpotBugs* and then:
 * In the top area, set *analysis effort* to *Maximal*
 * In tab *Reporter Configuration*, set *minimum confidence to report* to *Low*
-* In tab *Filter files*, under *Exclude filter files*, add the [findbugs-exclude-filter.xml](findbugs-exclude-filter.xml) file.
+* In tab *Filter files*, under *Exclude filter files*, add the [spotbugs-exclude-filter.xml](spotbugs-exclude-filter.xml) file.
 
 ## Support in Build Tool (Gradle)
 
