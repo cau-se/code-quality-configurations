@@ -15,8 +15,8 @@ To check Java source code according to certain quality standards, typically the 
 ## Support in IDE (Eclipse)
 
 1. If this is the first time you import the settings in Eclipse, check that your target project is not already imported in Eclipse.
-2. Open *Eclipse Preferences -> Java -> Code Style*.
-3. Import the files [eclipse-cleanup.xml](eclipse-cleanup.xml), [eclipse-formatter.xml](eclipse-formatter.xml), and [eclipse-import-order.importorder](eclipse-import-order.importorder) in the GUI dialogs *Clean up*, *Formatter*, and *Organize Imports* respectively.
+2. Open `Eclipse Preferences` -> `Java` -> `Code Style`.
+3. Import the files [eclipse-cleanup.xml](eclipse-cleanup.xml), [eclipse-formatter.xml](eclipse-formatter.xml), and [eclipse-import-order.importorder](eclipse-import-order.importorder) in the GUI dialogs `Clean up`, `Formatter`, and `Organize Imports` respectively.
 4. Now copy [org.eclipse.jdt.ui.prefs](org.eclipse.jdt.ui.prefs) to the `.settings` folder of your project.
 5. Create a `config` folder in your project that contains all tool configurations, i.e., [checkstyle.xml](checkstyle.xml), [checkstyle-suppression.xml](checkstyle-suppression.xml), [pmd.xml](pmd.xml), and [spotbugs-exclude-filter.xml](spotbugs-exclude-filter.xml).
 6. Finally, import the project in Eclipse and follow the next subsection to configure the tool's settings.
@@ -30,6 +30,11 @@ For **Spotbugs** support in Eclipse, we have to use its official plugin. You can
 * In the top area, set *analysis effort* to *Maximal*
 * In tab *Reporter Configuration*, set *minimum confidence to report* to *Low*
 * In tab *Filter files*, under *Exclude filter files*, add the [spotbugs-exclude-filter.xml](spotbugs-exclude-filter.xml) file.
+
+In order to show the violated rules of **PMD**, **Checkstyle**, and **Spotbugs** in Eclipse, you have to open the corresponding views via `Window` -> `Show View` -> `Other`
+
+- `Quality Assurance` -> `Checkstyle Violations` and `PMD Violations`
+- `SpotBugs`-> `Bug Explorer`
 
 ## Support in Build Tool (Gradle)
 
